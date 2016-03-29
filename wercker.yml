@@ -1,6 +1,7 @@
 box: ruby:2.2.4
 build:
   steps:
+    - bundle-install
     - script:
       name: print some useful information about the wercker box
       code: |-
@@ -9,4 +10,7 @@ build:
     - script:
       name: run test script
       code: ruby test.rb
+    - script:
+      name: run rspec tests
+      code: bundle exec rspec
 
