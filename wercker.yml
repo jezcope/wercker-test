@@ -4,5 +4,5 @@ build:
     - script:
       name: print some useful information about the wercker box
       code: |-
-        echo Timezone $TZ
+        env
 
