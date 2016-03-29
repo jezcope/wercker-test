@@ -1,0 +1,8 @@
+box: ruby:2.2.4
+build:
+  steps:
+    - script:
+      name: print some useful information about the wercker box
+      code: |-
+        echo Timezone $TZ
+
