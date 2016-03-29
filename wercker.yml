@@ -5,4 +5,7 @@ build:
       name: print some useful information about the wercker box
       code: |-
         env
+    - script:
+      name: run test script
+      code: ruby test.rb
 
