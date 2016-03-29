@@ -8,9 +8,6 @@ build:
         env
         ruby --version
     - script:
-      name: run test script
-      code: ruby test.rb
-    - script:
       name: run rspec tests
       code: bundle exec rspec
 
